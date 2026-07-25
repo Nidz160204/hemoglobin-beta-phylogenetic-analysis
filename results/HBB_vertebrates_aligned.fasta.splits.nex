@@ -1,0 +1,40 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=6;
+TAXLABELS
+[1] 'Danio'
+[2] 'Gallus'
+[3] 'Mus'
+[4] 'Homo'
+[5] 'Pan'
+[6] 'Canis'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=6 nsplits=19;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	100	 4,
+	100	 5,
+	93	 4 5,
+	45	 1 2 6,
+	100	 6,
+	95	 1 2,
+	100	 1,
+	51	 1 2 3,
+	5	 1 3,
+	3	 3 5,
+	0	 2 3,
+	3	 3 4,
+	3	 2 6,
+	1	 3 6,
+	0	 1 2 4,
+	0	 4 6,
+	1	 5 6,
+;
+END; [Splits]
+
