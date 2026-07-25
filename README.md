@@ -50,6 +50,84 @@ This project demonstrates a complete bioinformatics workflow, including sequence
 
 ---
 
+## ⚙️ Methods
+
+### 1. Protein Sequence Retrieval
+
+Hemoglobin Beta (HBB) protein sequences for six vertebrate species were retrieved from the **NCBI Protein** database in FASTA format.
+
+Species included:
+
+- Homo sapiens
+- Pan troglodytes
+- Canis lupus familiaris
+- Mus musculus
+- Gallus gallus
+- Danio rerio
+
+---
+
+### 2. FASTA Preparation
+
+Individual FASTA files were stored in:
+
+```text
+data/raw_sequences/
+```
+
+The sequences were combined into a single FASTA file:
+
+```text
+data/combined/HBB_vertebrates.fasta
+```
+
+Sequence headers were simplified to species names for improved readability in the phylogenetic tree.
+
+---
+
+### 3. Multiple Sequence Alignment
+
+Protein sequences were aligned using **MUSCLE**.
+
+The aligned output was saved as:
+
+```text
+data/aligned/HBB_vertebrates_aligned.fasta
+```
+
+---
+
+### 4. Phylogenetic Tree Construction
+
+Maximum Likelihood phylogenetic analysis was performed using **IQ-TREE 3**.
+
+Command used:
+
+```bash
+iqtree3 -s HBB_vertebrates_aligned.fasta -st AA -m MFP -bb 1000
+```
+
+### Command explanation
+
+| Parameter | Description |
+|-----------|-------------|
+| `-s` | Input aligned FASTA file |
+| `-st AA` | Specifies amino acid (protein) sequences |
+| `-m MFP` | Automatically selects the best-fit substitution model using ModelFinder |
+| `-bb 1000` | Performs 1000 ultrafast bootstrap replicates to assess branch support |
+
+---
+
+### 5. Tree Visualization
+
+The generated Maximum Likelihood tree (`.treefile`) was uploaded to **Interactive Tree Of Life (iTOL)** for visualization and exported as a publication-quality PNG image.
+
+---
+
+### 6. Project Organization
+
+The complete workflow, scripts, alignment files, phylogenetic trees, and figures are included in this repository to ensure reproducibility.
+
 ## 📂 Repository Structure
 
 ```text
