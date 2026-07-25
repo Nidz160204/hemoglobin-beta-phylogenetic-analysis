@@ -238,6 +238,17 @@ These results demonstrate the evolutionary conservation of the Hemoglobin Beta p
 
 ---
 
+## 💻 Software & Environment
+
+| Software | Version |
+|----------|---------|
+| MUSCLE | EMBL-EBI Web Server |
+| IQ-TREE | 3.1.2 |
+| iTOL | Online Tree Viewer |
+| Operating System | macOS |
+
+---
+
 ## 🚀 Skills Demonstrated
 
 - Protein sequence retrieval
@@ -264,4 +275,12 @@ These results demonstrate the evolutionary conservation of the Hemoglobin Beta p
 
 **Nidhi Shah**
 
-Interested in Bioinformatics, Computational Biology and Multi-omics Analysis.
+Citation
+
+If you use this workflow for educational purposes, please cite:
+
+Shah N.
+
+Evolutionary Analysis of Hemoglobin Beta (HBB) Across Vertebrates.
+
+GitHub Repository, 2026.
