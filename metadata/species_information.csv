@@ -1,0 +1,7 @@
+Species,Common_Name,Scientific_Name,Protein,Gene,NCBI_Protein_Accession
+Human,Human,Homo sapiens,Hemoglobin subunit beta,HBB,NP_000509.1
+Chimpanzee,Chimpanzee,Pan troglodytes,Hemoglobin subunit beta,HBB,NP_001009212.1
+House Mouse,House Mouse,Mus musculus,Hemoglobin subunit beta,HBB,NP_032244.2
+Dog,Domestic Dog,Canis lupus familiaris,Hemoglobin subunit beta,HBB,NP_001003369.1
+Chicken,Chicken,Gallus gallus,Hemoglobin subunit beta,HBB,NP_990670.1
+Zebrafish,Zebrafish,Danio rerio,Hemoglobin subunit beta,HBB,NP_571321.1
