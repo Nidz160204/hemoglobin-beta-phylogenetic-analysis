@@ -118,6 +118,25 @@ iqtree3 -s HBB_vertebrates_aligned.fasta -st AA -m MFP -bb 1000
 
 ---
 
+### Analysis Commands
+
+The phylogenetic analysis was performed using the following IQ-TREE command:
+
+```bash
+iqtree3 \
+-s data/aligned/HBB_vertebrates_aligned.fasta \
+-st AA \
+-m MFP \
+-bb 1000
+```
+
+This command performs:
+
+- Maximum Likelihood phylogenetic inference
+- Automatic substitution model selection using ModelFinder (`-m MFP`)
+- Protein sequence analysis (`-st AA`)
+- 1000 ultrafast bootstrap replicates (`-bb 1000`)
+
 ### 5. Tree Visualization
 
 The generated Maximum Likelihood tree (`.treefile`) was uploaded to **Interactive Tree Of Life (iTOL)** for visualization and exported as a publication-quality PNG image.
